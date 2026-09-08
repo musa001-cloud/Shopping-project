@@ -1,27 +1,46 @@
 import React, { useState } from 'react'
 import Navbar from '../Layout/Navbar'
-import Products from '../../products/Product.json'
-import { useParams } from 'react-router-dom'
-import Home from '../../home/Home'
+
 function Cart() {
-  const [count, setCount] = useState(1)
-
-  const { id } = useParams()
-
-  const pick = Products.map(
-    (product) => product.id === Number(id)
+  const [cartArray, setCartArray] = useState(
+    JSON.parse(localStorage.getItem('cart')) || []
   )
 
-  const increase = () => {
-    setCount(prev => prev + 1)
+  const increase = (id) => {
+    const updatedCart = cartArray.map((item) =>
+      item.id === id
+        ? { ...item, quantity: item.quantity + 1 }
+        : item
+    )
+
+    setCartArray(updatedCart)
+    localStorage.setItem('cart', JSON.stringify(updatedCart))
   }
 
-  const decrease = () => {
-    setCount(prev => (prev > 1 ? prev - 1 : 1))
+  const decrease = (id) => {
+    const updatedCart = cartArray.map((item) =>
+      item.id === id
+        ? {
+            ...item,
+            quantity: item.quantity > 1
+              ? item.quantity - 1
+              : 1
+          }
+        : item
+    )
+
+    setCartArray(updatedCart)
+    localStorage.setItem('cart', JSON.stringify(updatedCart))
   }
 
-  const total = pick ? pick.price * count : 0
-
+  // Calculate total
+  const total = cartArray
+    .reduce(
+      (sum, item) =>
+        sum + parseFloat(item.price) * item.quantity,
+      0
+    )
+    .toFixed(2)
 
   return (
     <div>
@@ -29,6 +48,7 @@ function Cart() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8">
 
+        {/* CART PRODUCTS */}
         <div className="lg:col-span-2">
 
           <div className="grid grid-cols-4 gap-4 font-semibold text-[18px] text-center">
@@ -40,74 +60,99 @@ function Cart() {
 
           <hr className="my-4 text-gray-400" />
 
-          <div className="grid grid-cols-4 gap-4 items-center text-center">
+          {cartArray.length === 0 ? (
+            <p className="text-center text-gray-500 mt-10">
+              Your cart is empty.
+            </p>
+          ) : (
+            cartArray.map((item) => (
 
-            <div>
-              <img
-                className="w-[120px] h-[120px] object-cover rounded-md mx-auto"
-                src={pick.image}
-                alt={pick.name}
-              />
-            </div>
+              <div key={item.id}>
 
-            {/* Name */}
-            <div>
-              <p>{pick.name}</p>
-            </div>
+                <div className="grid grid-cols-4 gap-4 items-center text-center">
 
-            {/* Price */}
-            <div>
-              <p className="text-blue-500 font-semibold">
-                ${pick.price}
-              </p>
-            </div>
+                  {/* IMAGE */}
+                  <div>
+                    <img
+                      className="w-[120px] h-[120px] object-cover rounded-md mx-auto"
+                      src={item.image}
+                      alt={item.name}
+                    />
+                  </div>
 
-            <div className="flex justify-center items-center">
+                  {/* NAME */}
+                  <div className="text-[18px] font-semibold">
+                    <p>{item.name}</p>
+                  </div>
 
-              <button
-                type="button"
-                onClick={decrease}
-                className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition"
-              >
-                -
-              </button>
+                  {/* PRICE */}
+                  <div>
+                    <p className="text-blue-500 font-semibold">
+                      ₦{item.price}
+                    </p>
+                  </div>
 
-              <span className="mx-3 border border-gray-300 py-2 px-4 rounded-md">
-                {count}
-              </span>
+                  {/* QUANTITY */}
+                  <div className="flex justify-center items-center">
 
-              <button
-                type="button"
-                onClick={increase}
-                className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition"
-              >
-                +
-              </button>
+                    <button
+                      type="button"
+                      onClick={() => decrease(item.id)}
+                      className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition"
+                    >
+                      -
+                    </button>
 
-            </div>
-          </div>
+                    <span className="mx-3 border border-gray-300 py-2 px-4 rounded-md">
+                      {item.quantity}
+                    </span>
 
-          <hr className="my-6 text-gray-300" />
+                    <button
+                      type="button"
+                      onClick={() => increase(item.id)}
+                      className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition"
+                    >
+                      +
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <hr className="my-6 text-gray-300" />
+
+              </div>
+            ))
+          )}
 
         </div>
 
-        <div className="flex justify-center">
+        {/* ORDER SUMMARY */}
+        <div className="flex justify-center lg:sticky lg:top-27 h-fit">
 
-          <div className="rounded-md shadow-md py-6 px-8 w-full max-w-[400px] h-fit">
+          <div className="rounded-md shadow-xl py-6 px-8 w-full max-w-[400px] h-fit">
 
             <h1 className="font-semibold text-2xl">
               Order Summary
             </h1>
 
             <div className="flex text-[16px] mt-6 font-semibold justify-between items-center">
-              <p>Price</p>
-              <p>${pick.price}</p>
+              <p>Items</p>
+
+              <p>
+                {cartArray.reduce(
+                  (sum, item) => sum + item.quantity,
+                  0
+                )}
+              </p>
             </div>
 
-            {/* Quantity */}
             <div className="flex text-[16px] mt-3 font-semibold justify-between items-center">
-              <p>Quantity</p>
-              <p>{count}</p>
+              <p>Products</p>
+
+              <p>
+                {cartArray.length}
+              </p>
             </div>
 
             <hr className="text-gray-400 mt-4" />
@@ -116,11 +161,12 @@ function Cart() {
               <p>Total</p>
 
               <p className="text-blue-500">
-                ${total}
+                ₦{total}
               </p>
             </div>
 
             <button
+              type="button"
               className="px-8 py-3 rounded-md
               justify-center bg-blue-500 w-full text-white
               items-center mt-8 hover:bg-blue-600

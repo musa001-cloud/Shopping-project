@@ -6,6 +6,28 @@ import { FaSearch } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
 import Nav from '../home/Layout/Navbar'
 function SearchResult() {
+
+    const addToCart = (product) => {
+  const cartArray = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const existingProduct = cartArray.find(
+    (item) => item.id === product.id
+  );
+
+  if (existingProduct) {
+    existingProduct.quantity += 1;
+  } else {
+    cartArray.push({
+      ...product,
+      quantity: 1,
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cartArray));
+
+  console.log(cartArray);
+};
+
    //The params
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
@@ -79,7 +101,10 @@ function SearchResult() {
                opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <button
           type="button"
-          onClick={()=> navigate("/cart")}
+          onClick={()=> {
+            addToCart(item);
+            navigate(`/cart`);
+          }}
           className="md:px-5 mb-2 px-2 py-2 bg-blue-500 text-white rounded-md
            hover:bg-blue-600 cursor-pointer group-hover:opacity-100"
         >

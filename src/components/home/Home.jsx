@@ -1,14 +1,11 @@
 
 import React, { useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Layout from "./Layout/Layout";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import FirstLayout from "./Layout/FirstLayout";
 import Products from "../products/Product.json"
 
 import Navbar from "./Layout/Navbar";
@@ -16,12 +13,29 @@ import Topsect from "./Topsect";
 import Category from "./Category";
 
 function Home() {
+  const added = localStorage.getItem("cart");
+  console.log("added", added);
+ const addToCart = (product) => {
+  const cartArray = JSON.parse(localStorage.getItem("cart")) || [];
 
-  
+  const existingProduct = cartArray.find(
+    (item) => item.id === product.id
+  );
+
+  if (existingProduct) {
+    existingProduct.quantity += 1;
+  } else {
+    cartArray.push({
+      ...product,
+      quantity: 1,
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cartArray));
+
+  console.log(cartArray);
+};
   const navigate = useNavigate();
-
-  const [search, setSearch] = useState("");
-  const [searchParams] = useSearchParams()
  
 const responsive = {
   desktop: {
@@ -84,6 +98,7 @@ return (
           },
         }}
       >
+        
         {topRating.map((item) => (
           <SwiperSlide key={item.id ?? item.name}>
             <div className="flex flex-col bg-white  hover:scale-105
@@ -99,14 +114,17 @@ return (
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black/40
                opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <button
-          type="button"
-          onClick={()=> navigate("/cart")}
-          className="md:px-5 mb-2 px-2 py-2 bg-blue-500 text-white rounded-md
-           hover:bg-blue-600 cursor-pointer group-hover:opacity-100"
-        >
-          Add To Cart
-        </button>
+             <button
+            type="button"
+             onClick={() => {
+              addToCart(item);
+              navigate("/cart");
+             }}
+             className="md:px-5 mb-2 px-2 py-2 bg-blue-500 text-white rounded-md
+            hover:bg-blue-600 cursor-pointer group-hover:opacity-100"
+          >
+             Add To Cart
+          </button>
         </div>
               </div>
             </div>
