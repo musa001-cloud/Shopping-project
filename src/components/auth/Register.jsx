@@ -39,16 +39,16 @@ function Register() {
   };
 
   return (
-    <div className="w-full md:min-h-auto md:relative fixed min-h-screen flex items-center justify-center px-4 py-6 ">
-      <div className="w-full md:max-h-[500px] max-h-[100vh] px-4 md:overflow-y-auto overflow-y-hidden max-w-md">
+    <div className="w-full min-h-screen flex items-center justify-center px-4 sm:px-6 py-8 sm:py-10 bg-gray-50">
+      <div className="w-full max-w-sm sm:max-w-md bg-white rounded-xl shadow-sm sm:shadow-md p-5 sm:p-8 border border-gray-100">
         {/* Header */}
         <div className="text-center mb-6">
-          <h1 className="text-2xl sm:text-[26px] font-semibold">
+          <h1 className="text-xl sm:text-2xl md:text-[26px] font-semibold">
             Welcome To VELNOX
           </h1>
 
           {message && (
-            <p className="mt-2 text-xs text-gray-500">
+            <p className="mt-2 text-xs sm:text-sm text-gray-500">
               {message}
             </p>
           )}
@@ -63,7 +63,7 @@ function Register() {
           <div>
             <label
               htmlFor="username"
-              className="block text-sm sm:text-[17px] font-semibold mb-1"
+              className="block text-sm sm:text-base font-semibold mb-1"
             >
               Username
             </label>
@@ -78,7 +78,7 @@ function Register() {
             />
 
             {errors.name && (
-              <p className="mt-1 text-red-500 text-[10px] sm:text-xs">
+              <p className="mt-1 text-red-500 text-[11px] sm:text-xs">
                 {errors.name.message}
               </p>
             )}
@@ -88,7 +88,7 @@ function Register() {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm sm:text-[17px] font-semibold mb-1"
+              className="block text-sm sm:text-base font-semibold mb-1"
             >
               Email
             </label>
@@ -108,7 +108,7 @@ function Register() {
             />
 
             {errors.email && (
-              <p className="mt-1 text-red-500 text-[10px] sm:text-xs">
+              <p className="mt-1 text-red-500 text-[11px] sm:text-xs">
                 {errors.email.message}
               </p>
             )}
@@ -118,7 +118,7 @@ function Register() {
           <div>
             <label
               htmlFor="password"
-              className="block text-sm sm:text-[17px] font-semibold mb-1"
+              className="block text-sm sm:text-base font-semibold mb-1"
             >
               Password
             </label>
@@ -137,7 +137,7 @@ function Register() {
             />
 
             {errors.password && (
-              <p className="mt-1 text-red-500 text-[10px] sm:text-xs">
+              <p className="mt-1 text-red-500 text-[11px] sm:text-xs">
                 {errors.password.message}
               </p>
             )}
@@ -147,7 +147,7 @@ function Register() {
           <div>
             <label
               htmlFor="confirm-password"
-              className="block text-sm sm:text-[17px] font-semibold mb-1"
+              className="block text-sm sm:text-base font-semibold mb-1"
             >
               Confirm Password
             </label>
@@ -164,7 +164,7 @@ function Register() {
             />
 
             {errors.confirmPassword && (
-              <p className="mt-1 text-red-500 text-[10px] sm:text-xs">
+              <p className="mt-1 text-red-500 text-[11px] sm:text-xs">
                 {errors.confirmPassword.message}
               </p>
             )}
@@ -173,20 +173,20 @@ function Register() {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full py-2.5 sm:py-3 rounded-md bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-medium transition duration-200"
+            className="w-full py-2.5 sm:py-3 rounded-md bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-medium text-sm sm:text-base transition duration-200"
           >
             Sign-up
           </button>
         </form>
 
         {/* Navigation */}
-        <div className="mt-6 text-center space-y-4">
-          <p className="text-sm sm:text-base">
-            Don't have an account?{" "}
+        <div className="mt-6 text-center space-y-3 sm:space-y-4">
+          <p className="text-xs sm:text-sm md:text-base">
+            Already have an account?{" "}
             <button
               type="button"
               onClick={() => navigate("/auth/login")}
-              className="text-sm text-blue-500 hover:underline cursor-pointer"
+              className="text-blue-500 hover:underline cursor-pointer"
             >
               Login
             </button>
@@ -195,7 +195,7 @@ function Register() {
           <button
             type="button"
             onClick={() => navigate("/home")}
-            className="text-sm sm:text-base text-blue-500 hover:underline cursor-pointer"
+            className="text-xs sm:text-sm md:text-base text-blue-500 hover:underline cursor-pointer"
           >
             Back to Home
           </button>

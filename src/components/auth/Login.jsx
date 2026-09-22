@@ -33,11 +33,11 @@ function Login() {
   };
 
   return (
-    <div className="w-full md:min-h-auto min-h-screen flex items-center justify-center px-4 py-6 sm:px-6 md:px-8">
-      <div className="w-full max-w-md">
+    <div className="w-full min-h-screen flex items-center justify-center px-4 sm:px-6 py-8 sm:py-10 bg-gray-50">
+      <div className="w-full max-w-sm sm:max-w-md bg-white rounded-xl shadow-sm sm:shadow-md p-5 sm:p-8 border border-gray-100">
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-2xl sm:text-[26px] font-semibold">
+        <div className="text-center mb-6 sm:mb-8">
+          <h1 className="text-xl sm:text-2xl md:text-[26px] font-semibold">
             Welcome Back
           </h1>
 
@@ -51,13 +51,13 @@ function Login() {
         {/* Login Form */}
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-full space-y-5"
+          className="w-full space-y-4 sm:space-y-5"
         >
           {/* Email */}
           <div>
             <label
               htmlFor="email"
-              className="block text-sm sm:text-[17px] font-semibold mb-1"
+              className="block text-sm sm:text-base font-semibold mb-1"
             >
               Email
             </label>
@@ -78,7 +78,7 @@ function Login() {
             />
 
             {errors.email && (
-              <p className="mt-1 text-red-500 text-[10px] sm:text-xs">
+              <p className="mt-1 text-red-500 text-[11px] sm:text-xs">
                 {errors.email.message}
               </p>
             )}
@@ -88,7 +88,7 @@ function Login() {
           <div>
             <label
               htmlFor="password"
-              className="block text-sm sm:text-[17px] font-semibold mb-1"
+              className="block text-sm sm:text-base font-semibold mb-1"
             >
               Password
             </label>
@@ -108,7 +108,7 @@ function Login() {
             />
 
             {errors.password && (
-              <p className="mt-1 text-red-500 text-[10px] sm:text-xs">
+              <p className="mt-1 text-red-500 text-[11px] sm:text-xs">
                 {errors.password.message}
               </p>
             )}
@@ -128,32 +128,30 @@ function Login() {
           {/* Login Button */}
           <button
             type="submit"
-            className="w-full py-2.5 sm:py-3 rounded-md bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-medium transition duration-200"
+            className="w-full py-2.5 sm:py-3 rounded-md bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-medium text-sm sm:text-base transition duration-200"
           >
             Login
           </button>
         </form>
 
         {/* Sign Up */}
-        <div className="mt-6 text-center">
-          <p className="text-sm sm:text-base">
+        <div className="mt-6 text-center space-y-3">
+          <p className="text-xs sm:text-sm md:text-base">
             Don't have an account?{" "}
             <button
               type="button"
               onClick={() => navigate("/auth/register")}
-              className="text-sm text-blue-500 hover:underline cursor-pointer"
+              className="text-blue-500 hover:underline cursor-pointer"
             >
               Sign-up
             </button>
           </p>
-        </div>
 
-        {/* Back Home */}
-        <div className="mt-5 text-center">
+          {/* Back Home */}
           <button
             type="button"
             onClick={() => navigate("/home")}
-            className="text-sm sm:text-base text-blue-500 hover:underline cursor-pointer"
+            className="text-xs sm:text-sm md:text-base text-blue-500 hover:underline cursor-pointer"
           >
             Back to Home
           </button>
