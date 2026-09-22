@@ -12,7 +12,6 @@ function Navbar() {
   const updateCartBadge = () => {
     try {
       const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
-      // Sum up total quantities (or use storedCart.length for unique items)
       const count = storedCart.reduce((sum, item) => sum + (item.quantity || 1), 0);
       setCartCount(count);
     } catch {

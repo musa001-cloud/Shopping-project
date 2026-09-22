@@ -15,6 +15,8 @@ function Cart() {
   const updateCartState = (updatedCart) => {
     setCartArray(updatedCart);
     localStorage.setItem('cart', JSON.stringify(updatedCart));
+    // 👇 tells the Navbar (and any other listener) to refresh the cart badge immediately
+    window.dispatchEvent(new Event('cartUpdated'));
   };
 
   const increase = (id) => {
