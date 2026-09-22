@@ -39,8 +39,8 @@ function Register() {
   };
 
   return (
-    <div className="w-full min-h-screen flex items-center justify-center px-4 py-6 sm:px-6 md:px-8">
-      <div className="w-full max-w-md max-h-[90vh] overflow-y-auto">
+    <div className="w-full md:min-h-auto md:relative fixed min-h-screen flex items-center justify-center px-4 py-6 ">
+      <div className="w-full md:max-h-[500px] max-h-[100vh] px-4 md:overflow-y-auto overflow-y-hidden max-w-md">
         {/* Header */}
         <div className="text-center mb-6">
           <h1 className="text-2xl sm:text-[26px] font-semibold">

@@ -8,7 +8,7 @@ function Auth() {
     <div className="grid grid-cols-1 md:grid-cols-2
      w-full max-w-[850px] rounded-xl  shadow-xl">
     <div className="hidden md:block">
-        <img className='h-[500px] rounded-l-xl  object-cover' src={Img} alt=""  width={423} />
+        <img className='h-[560px] rounded-l-xl  object-cover' src={Img} alt=""  width={423} />
     </div>
     
    <div className='bg-white p-2 ml-[-10px] rounded-r-xl '>

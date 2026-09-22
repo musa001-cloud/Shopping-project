@@ -33,7 +33,7 @@ function Login() {
   };
 
   return (
-    <div className="w-full min-h-screen flex items-center justify-center px-4 py-6 sm:px-6 md:px-8">
+    <div className="w-full md:min-h-auto min-h-screen flex items-center justify-center px-4 py-6 sm:px-6 md:px-8">
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
