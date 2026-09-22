@@ -344,14 +344,6 @@
     "price": "19.99"
   },
   {
-    "id": 44,
-    "category": "Cargo",
-    "rating":"9.4",
-    "image": "/assets/Cargo/Patent_Leather.jfif",
-    "name": "Patent Leather",
-    "price": "39.99"
-  },
-  {
     "id": 45,
     "category": "Cargo",
     "rating":"6.5",
