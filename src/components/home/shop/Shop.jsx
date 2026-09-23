@@ -1,53 +1,122 @@
-import React from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
-import { GoHome } from "react-icons/go"
-import Products from "../../products/Product.json"
+import React, { useEffect, useState } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { GoHome } from "react-icons/go";
+import Products from "../../products/Product.json";
 
 function Shop() {
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
 
+  const category = searchParams.get("category");
 
-    const addToCart = (product) => {
-  const cartArray = JSON.parse(localStorage.getItem("cart")) || [];
+  
+  const [cart, setCart] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem("cart")) || [];
+    } catch {
+      return [];
+    }
+  });
 
-  const existingProduct = cartArray.find(
-    (item) => item.id === product.id
-  );
+  const addToCart = (product) => {
+    try {
+      const cartArray =
+        JSON.parse(localStorage.getItem("cart")) || [];
 
-  if (existingProduct) {
-    existingProduct.quantity += 1;
-  } else {
-    cartArray.push({
-      ...product,
-      quantity: 1,
-    });
-  }
+      const existingProduct = cartArray.some(
+        (item) => item.id === product.id
+      );
 
-  localStorage.setItem("cart", JSON.stringify(cartArray));
+      let updatedCart;
 
-  console.log(cartArray);
-};
+      if (existingProduct) {
+        updatedCart = cartArray.filter(
+          (item) => item.id !== product.id
+        );
+      } else {
+        updatedCart = [
+          ...cartArray,
+          {
+            ...product,
+            quantity: 1,
+          },
+        ];
+      }
 
-  const [searchParams] = useSearchParams()
-  const category = searchParams.get('category')
-  const navigate = useNavigate()
+      setCart(updatedCart);
 
-  const categoryValue = category ? category.toLowerCase() : ''
+      localStorage.setItem(
+        "cart",
+        JSON.stringify(updatedCart)
+      );
+
+      window.dispatchEvent(
+        new Event("cartUpdated")
+      );
+
+      console.log("Updated Cart:", updatedCart);
+    } catch (error) {
+      console.error("Cart error:", error);
+    }
+  };
+
+  const isInCart = (productId) => {
+    return cart.some(
+      (item) => item.id === productId
+    );
+  };
+
+  useEffect(() => {
+    const updateCart = () => {
+      try {
+        const storedCart =
+          JSON.parse(localStorage.getItem("cart")) || [];
+
+        setCart(storedCart);
+      } catch {
+        setCart([]);
+      }
+    };
+
+    window.addEventListener(
+      "cartUpdated",
+      updateCart
+    );
+
+    return () => {
+      window.removeEventListener(
+        "cartUpdated",
+        updateCart
+      );
+    };
+  }, []);
+
+  const categoryValue = category
+    ? category.toLowerCase()
+    : "";
 
   const FilterProduct = category
     ? Products.filter((product) =>
-        product.category?.toLowerCase().includes(categoryValue)
+        product.category
+          ?.toLowerCase()
+          .includes(categoryValue)
       )
-    : Products
+    : Products;
 
   return (
     <div className="md:px-[100px] px-[50px] py-[20px]">
 
       <div className="flex justify-between items-center px-[50px] py-[20px]">
 
+        {/* HOME BUTTON */}
         <div
-          onClick={() => navigate('/home')}
-          className="text-[30px] active:text-gray-900
-          hover:text-gray-600 cursor-pointer"
+          onClick={() => navigate("/home")}
+          className="
+            text-[30px]
+            active:text-gray-900
+            hover:text-gray-600
+            cursor-pointer
+          "
         >
           <GoHome />
         </div>
@@ -60,65 +129,115 @@ function Shop() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
-        {FilterProduct.map((item) => (
+        {FilterProduct.map((item) => {
 
-          <div
-            key={item.id}
-            className="flex flex-col bg-white hover:scale-105
-            hover:shadow-xl h-[400px] group relative cursor-pointer
-            overflow-hidden rounded-2xl shadow-lg transition-all duration-300"
-          >
+          const productInCart = isInCart(item.id);
 
-            <img
-              className="w-full h-[280px] rounded-t-2xl object-cover"
-              src={item.image}
-              alt={item.name}
-            />
+          return (
+            <div
+              key={item.id}
+              className="
+                flex flex-col
+                bg-white
+                hover:scale-105
+                hover:shadow-xl
+                h-[400px]
+                group
+                relative
+                cursor-pointer
+                overflow-hidden
+                rounded-2xl
+                shadow-lg
+                transition-all
+                duration-300
+              "
+            >
 
-            <div className="text-center pb-8 px-4 h-[130px]">
+              <img
+                className="
+                  w-full
+                  h-[280px]
+                  rounded-t-2xl
+                  object-cover
+                "
+                src={item.image}
+                alt={item.name}
+              />
 
-              <h2 className="text-[16px] font-semibold mb-2">
-                {item.name}
-              </h2>
+              <div className="text-center pb-8 px-4 h-[130px]">
 
-              <div className="flex items-baseline justify-between w-full px-7">
+                <h2 className="text-[16px] font-semibold mb-2">
+                  {item.name}
+                </h2>
 
-                <p className="text-blue-600 text-xl font-semibold mb-4">
-                  ₦{item.price}
-                </p>
+                <div className="flex items-baseline justify-between w-full px-7">
 
-                <p>
-                  {Number(item.rating) >= 10
-                    ? "⭐⭐⭐⭐⭐"
-                    : "⭐⭐⭐⭐"}
-                </p>
+                  <p className="text-blue-600 text-xl font-semibold mb-4">
+                    ₦{item.price}
+                  </p>
+
+                  <p>
+                    {Number(item.rating) >= 10
+                      ? "⭐⭐⭐⭐⭐"
+                      : "⭐⭐⭐⭐"}
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div
+                className="
+                  absolute
+                  inset-0
+                  md:flex
+                  md:mt-0
+                  mt-[350px]
+                  items-center
+                  justify-center
+                  md:bg-black/40
+                  md:opacity-0
+                  transition-opacity
+                  duration-300
+                  group-hover:opacity-100
+                "
+              >
+
+                <button
+                  type="button"
+                  onClick={() => addToCart(item)}
+                  className={`
+                    md:px-5
+                    mb-2
+                    px-2
+                    py-2
+                    text-white
+                    rounded-md
+                    cursor-pointer
+                    transition-all
+                    duration-300
+                    ${
+                      productInCart
+                        ? "bg-red-500 hover:bg-red-600"
+                        : "bg-blue-500 hover:bg-blue-600"
+                    }
+                  `}
+                >
+                  {productInCart
+                    ? "Remove From Cart"
+                    : "Add To Cart"}
+                </button>
 
               </div>
 
             </div>
-
-           <div className="absolute inset-0 md:flex md:mt-0 mt-[350px] items-center justify-center md:bg-black/40
-                 md:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-               <button
-              type="button"
-               onClick={() => {
-                addToCart(item);
-               }}
-               className="md:px-5 mb-2 px-2 py-2 bg-blue-500 text-white rounded-md
-              hover:bg-blue-600 cursor-pointer group-hover:opacity-100"
-            >
-               Add To Cart
-            </button>
-          </div>
-
-          </div>
-
-        ))}
+          );
+        })}
 
       </div>
 
     </div>
-  )
+  );
 }
 
-export default Shop
+export default Shop;
