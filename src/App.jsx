@@ -10,13 +10,14 @@ import Shop from "./components/home/shop/Shop.jsx";
 import SearchResult from "./components/home/SearchResult.jsx";
 import Cart from "./components/home/shop/Cart.jsx";
 import Auth from "./components/auth/Auth.jsx";
+import History from "./components/home/shop/History.jsx";
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/home" element={<Home />} />
-     
+      <Route path="/history" element={<History />} />
      <Route path="/cart" element={<Cart />} />
       <Route path="/about" element={<About />} />
       <Route path="/shop" element={<Shop/>} />

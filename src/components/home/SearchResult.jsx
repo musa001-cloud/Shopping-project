@@ -97,20 +97,19 @@ function SearchResult() {
               <p className="text-blue-600 text-xl font-semibold mb-4">₦{item.price}</p>
               <p>{item.rating >= 10 ? "⭐⭐⭐⭐⭐" : "⭐⭐⭐⭐"}</p>
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black/40
-               opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <button
-          type="button"
-          onClick={()=> {
-            addToCart(item);
-            navigate(`/cart`);
-          }}
-          className="md:px-5 mb-2 px-2 py-2 bg-blue-500 text-white rounded-md
-           hover:bg-blue-600 cursor-pointer group-hover:opacity-100"
-        >
-          Add To Cart
-        </button>
-        </div>
+              <div className="absolute inset-0 md:flex md:mt-0 mt-[350px] items-center justify-center md:bg-black/40
+                 md:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+               <button
+              type="button"
+               onClick={() => {
+                addToCart(item);
+               }}
+               className="md:px-5 mb-2 px-2 py-2 bg-blue-500 text-white rounded-md
+              hover:bg-blue-600 cursor-pointer group-hover:opacity-100"
+            >
+               Add To Cart
+            </button>
+          </div>
               </div>
             </div>
         ))}
