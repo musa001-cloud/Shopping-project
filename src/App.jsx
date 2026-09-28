@@ -11,6 +11,7 @@ import SearchResult from "./components/home/SearchResult.jsx";
 import Cart from "./components/home/shop/Cart.jsx";
 import Auth from "./components/auth/Auth.jsx";
 import History from "./components/home/shop/History.jsx";
+import Checkout from "./components/home/shop/Checkout.jsx";
 function App() {
   return (
     <Routes>
@@ -18,7 +19,8 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/home" element={<Home />} />
       <Route path="/history" element={<History />} />
-     <Route path="/cart" element={<Cart />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/checkout" element={<Checkout />} />
       <Route path="/about" element={<About />} />
       <Route path="/shop" element={<Shop/>} />
       <Route path="/search" element={<SearchResult/>} />

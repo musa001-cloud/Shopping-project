@@ -369,7 +369,7 @@ function SearchResult() {
                           mb-4
                         "
                       >
-                        ₦{item.price}
+                        ${item.price}
                       </p>
 
                       {/* RATING */}

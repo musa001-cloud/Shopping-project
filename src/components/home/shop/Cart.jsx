@@ -6,45 +6,7 @@ import { useNavigate } from 'react-router-dom';
 function Cart() {
   const navigate = useNavigate();
 
-
-    const proceedToCheckout = () => {
-  if (cartArray.length === 0) return;
-
-  const order = {
-    id: Date.now(),
-    date: new Date().toLocaleString('en-NG'),
-    items: cartArray,
-    total: cartArray.reduce(
-      (sum, item) => sum + Number(item.price) * item.quantity,
-      0
-    ),
-  };
-
-  // Get previous orders
-  const previousOrders =
-    JSON.parse(localStorage.getItem('orderHistory')) || [];
-
-  // Add new order
-  const updatedOrders = [order, ...previousOrders];
-
-  // Save order history
-  localStorage.setItem(
-    'orderHistory',
-    JSON.stringify(updatedOrders)
-  );
-
-  // Clear cart
-  updateCartState([]);
-
-  // Go to history page
-  navigate('/history');
-};
-
-
-
-
-
-
+  // Get cart from localStorage
   const [cartArray, setCartArray] = useState(() => {
     try {
       const savedCart = localStorage.getItem('cart');
@@ -57,8 +19,13 @@ function Cart() {
   // Update state + localStorage + notify Navbar
   const updateCartState = (updatedCart) => {
     setCartArray(updatedCart);
-    localStorage.setItem('cart', JSON.stringify(updatedCart));
 
+    localStorage.setItem(
+      'cart',
+      JSON.stringify(updatedCart)
+    );
+
+    // Notify Navbar that cart has changed
     window.dispatchEvent(new Event('cartUpdated'));
   };
 
@@ -82,7 +49,10 @@ function Cart() {
       item.id === id
         ? {
             ...item,
-            quantity: Math.max(Number(item.quantity || 1) - 1, 1),
+            quantity: Math.max(
+              Number(item.quantity || 1) - 1,
+              1
+            ),
           }
         : item
     );
@@ -92,12 +62,21 @@ function Cart() {
 
   // Delete item
   const deleteItem = (id) => {
-    const updatedCart = cartArray.filter((item) => item.id !== id);
+    const updatedCart = cartArray.filter(
+      (item) => item.id !== id
+    );
 
     updateCartState(updatedCart);
   };
 
-  // Total price
+  // Proceed to checkout
+  const proceedToCheckout = () => {
+    if (cartArray.length === 0) return;
+
+    navigate('/checkout');
+  };
+
+  // Calculate total price
   const total = cartArray
     .reduce((sum, item) => {
       const price = Number(item.price) || 0;
@@ -110,9 +89,10 @@ function Cart() {
       maximumFractionDigits: 2,
     });
 
-  // Total quantity
+  // Calculate total quantity
   const totalItems = cartArray.reduce(
-    (sum, item) => sum + Number(item.quantity || 1),
+    (sum, item) =>
+      sum + Number(item.quantity || 1),
     0
   );
 
@@ -122,7 +102,9 @@ function Cart() {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 p-4 sm:p-8">
 
-        {/* CART PRODUCTS */}
+        {/* =========================
+            CART PRODUCTS
+        ========================== */}
         <div className="lg:col-span-2 bg-white p-6 rounded-lg shadow-sm">
 
           {/* DESKTOP HEADER */}
@@ -139,6 +121,14 @@ function Cart() {
               <p className="text-gray-500 text-lg">
                 Your cart is currently empty.
               </p>
+
+              <button
+                type="button"
+                onClick={() => navigate('/')}
+                className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition"
+              >
+                Continue Shopping
+              </button>
             </div>
           ) : (
 
@@ -167,7 +157,10 @@ function Cart() {
                   {/* PRICE */}
                   <div>
                     <p className="text-blue-600 font-bold text-lg">
-                      ₦{Number(item.price).toLocaleString('en-NG')}
+                      ₦
+                      {Number(item.price).toLocaleString(
+                        'en-NG'
+                      )}
                     </p>
                   </div>
 
@@ -185,7 +178,7 @@ function Cart() {
 
                     {/* QUANTITY */}
                     <span className="w-10 text-center font-medium border border-gray-300 py-1 rounded-md">
-                      {item.quantity}
+                      {item.quantity || 1}
                     </span>
 
                     {/* INCREASE */}
@@ -213,12 +206,11 @@ function Cart() {
             ))
           )}
         </div>
-
-        {/* ORDER SUMMARY */}
         <div className="lg:sticky lg:top-24 h-fit">
 
           <div className="bg-white rounded-lg shadow-sm p-6 w-full border border-gray-100">
 
+            {/* TITLE */}
             <h2 className="font-bold text-2xl text-gray-800 border-b pb-4">
               Order Summary
             </h2>
@@ -252,11 +244,10 @@ function Cart() {
               </p>
             </div>
 
-            {/* CHECKOUT */}
             <button
               type="button"
               disabled={cartArray.length === 0}
-               onClick={proceedToCheckout}
+              onClick={proceedToCheckout}
               className={`w-full py-3 rounded-md font-semibold text-white mt-8 transition ${
                 cartArray.length === 0
                   ? 'bg-gray-300 cursor-not-allowed'
@@ -266,7 +257,6 @@ function Cart() {
               Proceed To Checkout
             </button>
 
-            {/* HISTORY BUTTON */}
             <button
               type="button"
               onClick={() => navigate('/history')}
@@ -277,10 +267,10 @@ function Cart() {
 
           </div>
         </div>
+
       </div>
     </div>
   );
 }
 
 export default Cart;
-

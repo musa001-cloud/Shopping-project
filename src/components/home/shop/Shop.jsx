@@ -173,7 +173,7 @@ function Shop() {
                 <div className="flex items-baseline justify-between w-full px-7">
 
                   <p className="text-blue-600 text-xl font-semibold mb-4">
-                    ₦{item.price}
+                    ${item.price}
                   </p>
 
                   <p>

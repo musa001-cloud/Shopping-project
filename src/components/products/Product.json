@@ -2,7 +2,7 @@
   {
     "id": 1,
     "category": "Baggy",
-    "rating":"10.0",
+    "rating": "10.0",
     "image": "/assets/Baggy/813181276508916235.jfif",
     "name": "Baggy Jean",
     "price": "29.99"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "category": "Baggy",
-    "rating":"7.0",
+    "rating": "7.0",
     "image": "/assets/Baggy/1036179826781599945.jfif",
     "name": "Baggy snow design",
     "price": "39.99"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "category": "Baggy",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Baggy/All-Seasons.jfif",
     "name": "wide baggy",
     "price": "29.99"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "category": "Baggy",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Baggy/Baggy-High-Street-Jeans.jfif",
     "name": "wide baggy",
     "price": "29.99"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "category": "Baggy",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Baggy/Boyfriend-Gifts.jfif",
     "name": "wide-leg jean",
     "price": "49.99"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "category": "Baggy",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Baggy/For-Men.jfif",
     "name": "Fit Barrel Leg Jeans",
     "price": "23.00"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "category": "Baggy",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Baggy/Grunge.jfif",
     "name": "wide-leg denim jeans",
     "price": "32.00"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "category": "Baggy",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Baggy/Instagram.jfif",
     "name": "Wide Flare Denim jeans",
     "price": "32.00"
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "category": "Baggy",
-    "rating":"5.0",
+    "rating": "5.0",
     "image": "/assets/Baggy/Leg.jfif",
     "name": " wide-leg streetwear jeans",
     "price": "15.00"
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "category": "Baggy",
-    "rating":"5.0",
+    "rating": "5.0",
     "image": "/assets/Baggy/Manfinity.jfif",
     "name": "wide-leg jeans",
     "price": "15.00"
@@ -82,7 +82,7 @@
   {
     "id": 11,
     "category": "Baggy",
-    "rating":"5.0",
+    "rating": "5.0",
     "image": "/assets/Baggy/Men-Jeans.jfif",
     "name": "black baggy denim jorts",
     "price": "19.99"
@@ -90,7 +90,7 @@
   {
     "id": 12,
     "category": "Baggy",
-    "rating":"5.0",
+    "rating": "5.0",
     "image": "/assets/Baggy/Skater-Style.jfif",
     "name": "wide-leg denim jorts",
     "price": "39.99"
@@ -98,7 +98,7 @@
   {
     "id": 13,
     "category": "Baggy",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/Baggy/trendy-baggy.jfif",
     "name": "Bershka Super Baggy Jeans",
     "price": "39.99"
@@ -106,7 +106,7 @@
   {
     "id": 14,
     "category": "Baggy",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/Baggy/Vintage-Baggy.jfif",
     "name": "baggy streetwear jeans",
     "price": "89.99"
@@ -114,7 +114,7 @@
   {
     "id": 15,
     "category": "Baggy",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/Baggy/[Washed Black].jfif",
     "name": " black denim jeans",
     "price": "95.99"
@@ -122,7 +122,7 @@
   {
     "id": 16,
     "category": "Baggy",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/Baggy/Your-Style.jfif",
     "name": "light-wash baggy denim jeans",
     "price": "79.99"
@@ -130,7 +130,7 @@
   {
     "id": 17,
     "category": "T-shirt",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/image/download.jfif",
     "name": "oversized streetwear T-shirt",
     "price": "29.99"
@@ -138,7 +138,7 @@
   {
     "id": 18,
     "category": "T-shirt",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/image/FRACTYR .jfif",
     "name": "streetwear jersey",
     "price": "39.99"
@@ -146,7 +146,7 @@
   {
     "id": 19,
     "category": "T-shirt",
-    "rating":"4.0",
+    "rating": "4.0",
     "image": "/assets/image/Sleeve-Casual.jfif",
     "name": "oversized streetwear jersey",
     "price": "29.99"
@@ -154,7 +154,7 @@
   {
     "id": 20,
     "category": "T-shirt",
-    "rating":"4.0",
+    "rating": "4.0",
     "image": "/assets/image/Wreck.jfif",
     "name": "V-neck mesh jersey",
     "price": "29.99"
@@ -162,7 +162,7 @@
   {
     "id": 21,
     "category": "T-shirt",
-    "rating":"9.0",
+    "rating": "9.0",
     "image": "/assets/img/metal.jfif",
     "name": "Vintage T-Shirt",
     "price": "69.99"
@@ -170,7 +170,7 @@
   {
     "id": 22,
     "category": "T-shirt",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/img/spider.jfif",
     "name": "black short-sleeve graphic tee ",
     "price": "23.00"
@@ -178,7 +178,7 @@
   {
     "id": 23,
     "category": "T-shirt",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/img/front-back.jfif",
     "name": " streetwear graphic t-shirt",
     "price": "32.00"
@@ -186,7 +186,7 @@
   {
     "id": 24,
     "category": "T-shirt",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/img/anime.jfif",
     "name": "streetwear T-shirt",
     "price": "32.00"
@@ -194,7 +194,7 @@
   {
     "id": 25,
     "category": "T-shirt",
-    "rating":"4.0",
+    "rating": "4.0",
     "image": "/assets/Profile/studio(2).jfif",
     "name": "chocolate brown t-shirt",
     "price": "15.00"
@@ -202,7 +202,7 @@
   {
     "id": 26,
     "category": "T-shirt",
-    "rating":"9.0",
+    "rating": "9.0",
     "image": "/assets/Profile/aura.jfif",
     "name": "Oversized Short Sleeve Shirt ",
     "price": "15.00"
@@ -210,7 +210,7 @@
   {
     "id": 27,
     "category": "T-shirt",
-    "rating":"4.0",
+    "rating": "4.0",
     "image": "/assets/Profile/Ultimate.jfif",
     "name": "Box T-shirt",
     "price": "19.99"
@@ -218,7 +218,7 @@
   {
     "id": 28,
     "category": "T-shirt",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Profile/under-shirt.jfif",
     "name": "Brown T-shirt",
     "price": "39.99"
@@ -226,7 +226,7 @@
   {
     "id": 29,
     "category": "T-shirt",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Valentino/Polo-Shirt.jfif",
     "name": " short-sleeve black polo shirt ",
     "price": "39.99"
@@ -234,7 +234,7 @@
   {
     "id": 30,
     "category": "T-shirt",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/image/Over.jfif",
     "name": " camel-brown t-shirt",
     "price": "39.99"
@@ -242,7 +242,7 @@
   {
     "id": 31,
     "category": "T-shirt",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Profile/Caposerio.jfif",
     "name": "Brown T-shirt",
     "price": "15.99"
@@ -250,7 +250,7 @@
   {
     "id": 32,
     "category": "T-shirt",
-    "rating":"2.5",
+    "rating": "2.5",
     "image": "/assets/Profile/Fearless.jfif",
     "name": "Fearless T-shirt",
     "price": "79.99"
@@ -258,7 +258,7 @@
   {
     "id": 33,
     "category": "Cargo",
-    "rating":"9.5",
+    "rating": "9.5",
     "image": "/assets/Cargo/2750….jfif",
     "name": "Dark ash Naked Wolfe",
     "price": "29.99"
@@ -266,7 +266,7 @@
   {
     "id": 34,
     "category": "Cargo",
-    "rating":"9.5",
+    "rating": "9.5",
     "image": "/assets/Cargo/174233079329088189.jfif",
     "name": "Chunky Derby Shoe",
     "price": "39.99"
@@ -274,7 +274,7 @@
   {
     "id": 35,
     "category": "Cargo",
-    "rating":"9.5",
+    "rating": "9.5",
     "image": "/assets/Cargo/552887291776257975.jfif",
     "name": "Oxford shoe",
     "price": "29.99"
@@ -282,7 +282,7 @@
   {
     "id": 36,
     "category": "Cargo",
-    "rating":"9.5",
+    "rating": "9.5",
     "image": "/assets/Cargo/Baggy-Jeans.jfif",
     "name": "matte tan Derby shoe",
     "price": "29.99"
@@ -290,7 +290,7 @@
   {
     "id": 37,
     "category": "Cargo",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Cargo/uomo.jfif",
     "name": "Square-Toe",
     "price": "69.99"
@@ -298,7 +298,7 @@
   {
     "id": 38,
     "category": "Cargo",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Cargo/Y2k.jfif",
     "name": "Sneaker",
     "price": "23.00"
@@ -306,7 +306,7 @@
   {
     "id": 39,
     "category": "Cargo",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Cargo/rematar.jfif",
     "name": "sleek Bottega Veneta",
     "price": "32.00"
@@ -314,7 +314,7 @@
   {
     "id": 40,
     "category": "Cargo",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Cargo/FARFETCH.jfif",
     "name": "lace-up",
     "price": "32.00"
@@ -322,7 +322,7 @@
   {
     "id": 41,
     "category": "Cargo",
-    "rating":"9.4",
+    "rating": "9.4",
     "image": "/assets/Cargo/Hiking.jfif",
     "name": "derby",
     "price": "15.00"
@@ -330,7 +330,7 @@
   {
     "id": 42,
     "category": "Cargo",
-    "rating":"5.4",
+    "rating": "5.4",
     "image": "/assets/Cargo/heren.jfif",
     "name": "Oxford Shoe",
     "price": "15.00"
@@ -338,7 +338,7 @@
   {
     "id": 43,
     "category": "Cargo",
-    "rating":"9",
+    "rating": "9",
     "image": "/assets/Cargo/hommes.jfif",
     "name": "Sneakers",
     "price": "19.99"
@@ -346,7 +346,7 @@
   {
     "id": 45,
     "category": "Cargo",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Cargo/cargo-casual.jfif",
     "name": "Fendy",
     "price": "39.99"
@@ -354,7 +354,7 @@
   {
     "id": 46,
     "category": "Cargo",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Cargo/Pants.jfif",
     "name": "Timber-Land",
     "price": "39.99"
@@ -362,7 +362,7 @@
   {
     "id": 47,
     "category": "Cargo",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Cargo/Techwear.jfif",
     "name": "derby",
     "price": "15.99"
@@ -370,7 +370,7 @@
   {
     "id": 48,
     "category": "Cargo",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Cargo/Teen.jfif",
     "name": "Prada Monolith",
     "price": "79.99"
@@ -378,136 +378,135 @@
   {
     "id": 49,
     "category": "Crocs",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/Crocs/_Price….jfif",
-    "name": "Dark ash Naked Wolfe",
+    "name": "Crocs Atlas All-Terrain Clog",
     "price": "29.99"
   },
   {
     "id": 50,
     "category": "Crocs",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/Crocs/[New].jfif",
-    "name": "Chunky Derby Shoe",
+    "name": "Crocs Offroad Sport Clog",
     "price": "39.99"
   },
   {
     "id": 51,
     "category": "Crocs",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/Crocs/Lightweight.jfif",
-    "name": "Oxford shoe",
+    "name": "Crocs All-Terrain Echo Clog",
     "price": "29.99"
   },
   {
     "id": 52,
     "category": "Crocs",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/Crocs/637189047299140775.jfif",
-    "name": "matte tan Derby shoe",
+    "name": "Crocs Classic All-Terrain Camo Clog",
     "price": "29.99"
   },
   {
     "id": 53,
     "category": "Crocs",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/Crocs/742953269817573037.jfif",
-    "name": "Square-Toe",
+    "name": "Crocs Classic Square-Toe Clog",
     "price": "69.99"
   },
   {
     "id": 54,
     "category": "Crocs",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/Crocs/905082856385387903.jfif",
-    "name": "Sneaker",
+    "name": "Crocs StreetSport Sneaker",
     "price": "23.00"
   },
   {
     "id": 55,
     "category": "Crocs",
-    "rating":"5.8",
+    "rating": "5.8",
     "image": "/assets/Crocs/984177324827132065.jfif",
-    "name": "sleek Bottega Veneta",
+    "name": "Crocs Mega Crush Clog",
     "price": "32.00"
   },
   {
     "id": 56,
     "category": "Crocs",
-    "rating":"5.8",
+    "rating": "5.8",
     "image": "/assets/Crocs/1025694883867032603.jfif",
-    "name": "lace-up",
+    "name": "Crocs Classic Lace-Up Clog",
     "price": "32.00"
   },
   {
     "id": 57,
     "category": "Crocs",
-    "rating":"5.8",
+    "rating": "5.8",
     "image": "/assets/Crocs/1031042908458548220.jfif",
-    "name": "derby",
+    "name": "Crocs Urban Derby Clog",
     "price": "15.00"
   },
   {
     "id": 58,
     "category": "Crocs",
-    "rating":"5.8",
+    "rating": "5.8",
     "image": "/assets/Crocs/1109011476981778212.jfif",
-    "name": "Oxford Shoe",
+    "name": "Crocs Classic Oxford Clog",
     "price": "15.00"
   },
   {
     "id": 59,
     "category": "Crocs",
-    "rating":"5.8",
+    "rating": "5.8",
     "image": "/assets/Crocs/1124281494481646216.jfif",
-    "name": "Sneakers",
+    "name": "Crocs Court Sport Sneaker",
     "price": "19.99"
   },
   {
     "id": 60,
     "category": "Crocs",
-    "rating":"5.6",
+    "rating": "5.6",
     "image": "/assets/Crocs/available.jfif",
-    "name": "Patent Leather",
+    "name": "Crocs Mega Crush Patent Clog",
     "price": "39.99"
-    
   },
   {
     "id": 61,
     "category": "Crocs",
-    "rating":"5.6",
+    "rating": "5.6",
     "image": "/assets/Crocs/COURT.jfif",
-    "name": "Fendy",
+    "name": "Crocs Classic Monogram Clog",
     "price": "39.99"
   },
   {
     "id": 62,
     "category": "Crocs",
-    "rating":"5.6",
+    "rating": "5.6",
     "image": "/assets/Crocs/Crocs.jfif",
-    "name": "Timber-Land",
+    "name": "Crocs Classic Outdoor Clog",
     "price": "39.99"
   },
   {
     "id": 63,
     "category": "Crocs",
-    "rating":"5.6",
+    "rating": "5.6",
     "image": "/assets/Crocs/Oreo-crocs.jfif",
-    "name": "derby",
+    "name": "Crocs Streetwear Derby Clog",
     "price": "15.99"
   },
   {
     "id": 64,
     "category": "Crocs",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/Crocs/unisex.jfif",
-    "name": "Prada Monolith",
+    "name": "Crocs Mega Crush Platform Clog",
     "price": "79.99"
   },
   {
     "id": 65,
     "category": "Baggy Leg Cuts",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/shoes/Pantaloncini.jfif",
     "name": "Wide Led Cut",
     "price": "79.99"
@@ -515,7 +514,7 @@
   {
     "id": 66,
     "category": "Baggy Leg Cuts",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/shoes/774740640466.jfif",
     "name": "Brown Manfinity Oversized",
     "price": "39.99"
@@ -523,7 +522,7 @@
   {
     "id": 67,
     "category": "Baggy Leg Cuts",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/shoes/908053008317225.jfif",
     "name": "Brown DSQUARED2 Signature",
     "price": "29.99"
@@ -531,7 +530,7 @@
   {
     "id": 68,
     "category": "Baggy Leg Cuts",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/shoes/fit.jfif",
     "name": "Chocolate Brown Unisex",
     "price": "29.99"
@@ -539,103 +538,103 @@
   {
     "id": 69,
     "category": "Baggy Leg Cuts",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/shoes/Bienvenido.jfif",
-    "name": "AXEPEAK Assorted",
+    "name": "men's denim jeans",
     "price": "69.99"
   },
   {
     "id": 70,
     "category": "Baggy Leg Cuts",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/shoes/Streetwear.jfif",
-    "name": "TorontoCN men's",
+    "name": "men's denim jeans",
     "price": "23.00"
   },
   {
     "id": 71,
     "category": "Baggy Leg Cuts",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/shoes/downl.jfif",
-    "name": "Brown T-shirt",
+    "name": "wide-leg denim shorts",
     "price": "32.00"
   },
   {
     "id": 72,
     "category": "Baggy Leg Cuts",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/shoes/hard.jfif",
-    "name": "Brown T-shirt",
+    "name": "denim jorts",
     "price": "32.00"
   },
   {
     "id": 73,
     "category": "Baggy Leg Cuts",
-    "rating":"9.5",
+    "rating": "9.5",
     "image": "/assets/shoes/Husband.jfif",
-    "name": "Chocolate Brown Button-up Shirt",
+    "name": "wide-leg baggy",
     "price": "15.00"
   },
   {
     "id": 74,
     "category": "Baggy Leg Cuts",
-    "rating":"7.5",
+    "rating": "7.5",
     "image": "/assets/shoes/USA.jfif",
-    "name": "DAMBA Premium",
+    "name": "straight-leg ripped jeans",
     "price": "15.00"
   },
   {
     "id": 75,
     "category": "Baggy Leg Cuts",
-    "rating":"9.5",
+    "rating": "9.5",
     "image": "/assets/shoes/one.jfif",
-    "name": "Box T-shirt",
+    "name": "wide-leg jeans",
     "price": "19.99"
   },
   {
     "id": 76,
     "category": "Baggy Leg Cuts",
-    "rating":"9.5",
+    "rating": "9.5",
     "image": "/assets/shoes/shorts.jfif",
-    "name": "Vychodcomm brown",
+    "name": "denim shorts",
     "price": "39.99"
   },
   {
     "id": 77,
     "category": "Baggy Leg Cuts",
-    "rating":"9.5",
+    "rating": "9.5",
     "image": "/assets/shoes/popo.jfif",
-    "name": "PROHIBITED brown",
+    "name": "wide-leg denim jeans",
     "price": "39.99"
   },
   {
     "id": 78,
     "category": "Baggy Leg Cuts",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/shoes/Street….jfif",
-    "name": "Nike Sportswear T-Shirt",
+    "name": "wide-leg denim jeans",
     "price": "39.99"
   },
   {
     "id": 79,
     "category": "Baggy Leg Cuts",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/shoes/SHEI.jfif",
-    "name": "chocolate brown Zara",
+    "name": "Star Patchwork Jorts",
     "price": "15.99"
   },
   {
     "id": 80,
     "category": "Baggy Leg Cuts",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/shoes/SHEIN.jfif",
-    "name": "Up And Down",
+    "name": "distressed denim shorts",
     "price": "79.99"
   },
   {
     "id": 81,
     "category": "Gucci",
-    "rating":"4.3",
+    "rating": "4.3",
     "image": "/assets/Gucci/102456960267922440.jfif",
     "name": "Dark ash Naked Wolfe",
     "price": "29.99"
@@ -643,7 +642,7 @@
   {
     "id": 82,
     "category": "Gucci",
-    "rating":"4.3",
+    "rating": "4.3",
     "image": "/assets/Gucci/170573904631253646.jfif",
     "name": "Chunky Derby Shoe",
     "price": "39.99"
@@ -651,7 +650,7 @@
   {
     "id": 83,
     "category": "Gucci",
-    "rating":"4.3",
+    "rating": "4.3",
     "image": "/assets/Gucci/231935449557451005.jfif",
     "name": "Oxford shoe",
     "price": "29.99"
@@ -659,7 +658,7 @@
   {
     "id": 84,
     "category": "Gucci",
-    "rating":"4.3",
+    "rating": "4.3",
     "image": "/assets/Gucci/Black_Gold.jfif",
     "name": "matte tan Derby shoe",
     "price": "29.99"
@@ -667,7 +666,7 @@
   {
     "id": 85,
     "category": "Gucci",
-    "rating":"5.7",
+    "rating": "5.7",
     "image": "/assets/Gucci/Brown.jfif",
     "name": "Square-Toe",
     "price": "69.99"
@@ -675,7 +674,7 @@
   {
     "id": 86,
     "category": "Gucci",
-    "rating":"5.7",
+    "rating": "5.7",
     "image": "/assets/Gucci/Canvas.jfif",
     "name": "Sneaker",
     "price": "23.00"
@@ -683,7 +682,7 @@
   {
     "id": 87,
     "category": "Gucci",
-    "rating":"5.7",
+    "rating": "5.7",
     "image": "/assets/Gucci/StayBeautiful.jfif",
     "name": "sleek Bottega Veneta",
     "price": "32.00"
@@ -691,7 +690,7 @@
   {
     "id": 88,
     "category": "Gucci",
-    "rating":"5.7",
+    "rating": "5.7",
     "image": "/assets/Gucci/console.jfif",
     "name": "lace-up",
     "price": "32.00"
@@ -699,7 +698,7 @@
   {
     "id": 89,
     "category": "Gucci",
-    "rating":"5.7",
+    "rating": "5.7",
     "image": "/assets/Gucci/Dresses.jfif",
     "name": "derby",
     "price": "15.00"
@@ -707,7 +706,7 @@
   {
     "id": 90,
     "category": "Gucci",
-    "rating":"4.5",
+    "rating": "4.5",
     "image": "/assets/Gucci/G U C C I.jfif",
     "name": "Oxford Shoe",
     "price": "15.00"
@@ -715,7 +714,7 @@
   {
     "id": 91,
     "category": "Gucci",
-    "rating":"4.5",
+    "rating": "4.5",
     "image": "/assets/Gucci/Guc.jfif",
     "name": "Sneakers",
     "price": "19.99"
@@ -723,7 +722,7 @@
   {
     "id": 92,
     "category": "Gucci",
-    "rating":"4.5",
+    "rating": "4.5",
     "image": "/assets/Gucci/Gucci Access.jfif",
     "name": "Patent Leather",
     "price": "39.99"
@@ -731,7 +730,7 @@
   {
     "id": 93,
     "category": "Gucci",
-    "rating":"4.5",
+    "rating": "4.5",
     "image": "/assets/Gucci/Luxury.jfif",
     "name": "Fendy",
     "price": "39.99"
@@ -739,7 +738,7 @@
   {
     "id": 94,
     "category": "Gucci",
-    "rating":"4.5",
+    "rating": "4.5",
     "image": "/assets/Gucci/mode.jfif",
     "name": "Timber-Land",
     "price": "39.99"
@@ -747,7 +746,7 @@
   {
     "id": 95,
     "category": "Gucci",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Gucci/personalshopper.jfif",
     "name": "derby",
     "price": "15.99"
@@ -755,7 +754,7 @@
   {
     "id": 96,
     "category": "Gucci",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Gucci/WhatsApp….jfif",
     "name": "Prada Monolith",
     "price": "79.99"
@@ -763,7 +762,7 @@
   {
     "id": 97,
     "category": "Shoes",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/lace/614671049177297576.jfif",
     "name": "Dark ash Naked Wolfe",
     "price": "29.99"
@@ -771,7 +770,7 @@
   {
     "id": 98,
     "category": "Shoes",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/lace/922815779909838170.jfif",
     "name": "Chunky Derby Shoe",
     "price": "39.99"
@@ -779,7 +778,7 @@
   {
     "id": 99,
     "category": "Shoes",
-    "rating":"8.5",
+    "rating": "8.5",
     "image": "/assets/lace/Beige.jfif",
     "name": "Oxford shoe",
     "price": "29.99"
@@ -787,7 +786,7 @@
   {
     "id": 100,
     "category": "Shoes",
-    "rating":"3.2",
+    "rating": "3.2",
     "image": "/assets/lace/Billionaire.jfif",
     "name": "matte tan Derby shoe",
     "price": "29.99"
@@ -795,7 +794,7 @@
   {
     "id": 101,
     "category": "Shoes",
-    "rating":"3.2",
+    "rating": "3.2",
     "image": "/assets/lace/Bottega Veneta Glossy.jfif",
     "name": "Square-Toe",
     "price": "69.99"
@@ -803,7 +802,7 @@
   {
     "id": 102,
     "category": "Shoes",
-    "rating":"3.2",
+    "rating": "3.2",
     "image": "/assets/lace/Classic Shoes.jfif",
     "name": "Sneaker",
     "price": "23.00"
@@ -811,7 +810,7 @@
   {
     "id": 103,
     "category": "Shoes",
-    "rating":"3.2",
+    "rating": "3.2",
     "image": "/assets/lace/download (1).jfif",
     "name": "sleek Bottega Veneta",
     "price": "32.00"
@@ -819,7 +818,7 @@
   {
     "id": 104,
     "category": "Shoes",
-    "rating":"5.6",
+    "rating": "5.6",
     "image": "/assets/lace/download (2).jfif",
     "name": "lace-up",
     "price": "32.00"
@@ -827,7 +826,7 @@
   {
     "id": 105,
     "category": "Shoes",
-    "rating":"5.6",
+    "rating": "5.6",
     "image": "/assets/lace/download (3).jfif",
     "name": "derby",
     "price": "15.00"
@@ -835,7 +834,7 @@
   {
     "id": 106,
     "category": "Shoes",
-    "rating":"5.6",
+    "rating": "5.6",
     "image": "/assets/lace/download.jfif",
     "name": "Oxford Shoe",
     "price": "15.00"
@@ -843,7 +842,7 @@
   {
     "id": 107,
     "category": "Shoes",
-    "rating":"5.6",
+    "rating": "5.6",
     "image": "/assets/lace/Premium quality shoe.jfif",
     "name": "Sneakers",
     "price": "19.99"
@@ -851,7 +850,7 @@
   {
     "id": 108,
     "category": "Shoes",
-    "rating":"5.6",
+    "rating": "5.6",
     "image": "/assets/lace/Strongshen.jfif",
     "name": "Patent Leather",
     "price": "39.99"
@@ -859,23 +858,15 @@
   {
     "id": 109,
     "category": "Shoes",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/lace/STYLISH.jfif",
     "name": "Fendy",
     "price": "39.99"
   },
   {
-    "id": 110,
-    "category": "Shoes",
-    "rating":"6.5",
-    "image": "/assets/lace/SWAG.jfif",
-    "name": "Timber-Land",
-    "price": "39.99"
-  },
-  {
     "id": 111,
     "category": "Shoes",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/lace/Timber.jfif",
     "name": "derby",
     "price": "15.99"
@@ -883,7 +874,7 @@
   {
     "id": 112,
     "category": "Shoes",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/lace/trending shoes.jfif",
     "name": "Prada Monolith",
     "price": "79.99"
@@ -891,7 +882,7 @@
   {
     "id": 113,
     "category": "Valentino",
-    "rating":"7.6",
+    "rating": "7.6",
     "image": "/assets/Valentino/25825397860622612.jfif",
     "name": "Dark ash Naked Wolfe",
     "price": "29.99"
@@ -899,7 +890,7 @@
   {
     "id": 114,
     "category": "Valentino",
-    "rating":"7.6",
+    "rating": "7.6",
     "image": "/assets/Valentino/42784265206103436.jfif",
     "name": "Chunky Derby Shoe",
     "price": "39.99"
@@ -907,7 +898,7 @@
   {
     "id": 115,
     "category": "Valentino",
-    "rating":"7.6",
+    "rating": "7.6",
     "image": "/assets/Valentino/325385141843255396.jfif",
     "name": "Oxford shoe",
     "price": "29.99"
@@ -915,7 +906,7 @@
   {
     "id": 116,
     "category": "Valentino",
-    "rating":"7.6",
+    "rating": "7.6",
     "image": "/assets/Valentino/Jacket Valentino.jfif",
     "name": "matte tan Derby shoe",
     "price": "29.99"
@@ -923,7 +914,7 @@
   {
     "id": 117,
     "category": "Valentino",
-    "rating":"9.6",
+    "rating": "9.6",
     "image": "/assets/Valentino/only Top o_1 selected perfume.jfif",
     "name": "Valentino perfume",
     "price": "69.99"
@@ -931,7 +922,7 @@
   {
     "id": 118,
     "category": "Valentino",
-    "rating":"8.7",
+    "rating": "8.7",
     "image": "/assets/Valentino/PERFUMES.jfif",
     "name": "Sneaker",
     "price": "23.00"
@@ -939,7 +930,7 @@
   {
     "id": 119,
     "category": "Valentino",
-    "rating":"8.7",
+    "rating": "8.7",
     "image": "/assets/Valentino/Polo Shirt.jfif",
     "name": "sleek Bottega Veneta",
     "price": "32.00"
@@ -947,7 +938,7 @@
   {
     "id": 120,
     "category": "Valentino",
-    "rating":"8.7",
+    "rating": "8.7",
     "image": "/assets/Valentino/Valentino Garavani (2).jfif",
     "name": "lace-up",
     "price": "32.00"
@@ -955,7 +946,7 @@
   {
     "id": 121,
     "category": "Valentino",
-    "rating":"8.7",
+    "rating": "8.7",
     "image": "/assets/Valentino/Valentino Garavani Shoes _.jfif",
     "name": "derby",
     "price": "15.00"
@@ -963,7 +954,7 @@
   {
     "id": 122,
     "category": "Valentino",
-    "rating":"8.7",
+    "rating": "8.7",
     "image": "/assets/Valentino/Valentino Garavani Vltn Slides - Black.jfif",
     "name": "Oxford Shoe",
     "price": "15.00"
@@ -971,7 +962,7 @@
   {
     "id": 123,
     "category": "Valentino",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Valentino/Valentino Garavani.jfif",
     "name": "Sneakers",
     "price": "19.99"
@@ -979,7 +970,7 @@
   {
     "id": 124,
     "category": "Valentino",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Valentino/Valentino Uomo.jfif",
     "name": "Patent Leather",
     "price": "39.99"
@@ -987,7 +978,7 @@
   {
     "id": 125,
     "category": "Valentino",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Valentino/Valentino US.jfif",
     "name": "Fendy",
     "price": "39.99"
@@ -995,7 +986,7 @@
   {
     "id": 126,
     "category": "Valentino",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Valentino/Você.jfif",
     "name": "Timber-Land",
     "price": "39.99"
@@ -1003,7 +994,7 @@
   {
     "id": 127,
     "category": "Valentino",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Valentino/Women’s Luxury.jfif",
     "name": "derby",
     "price": "15.99"
@@ -1011,57 +1002,57 @@
   {
     "id": 128,
     "category": "Valentino",
-    "rating":"6.5",
+    "rating": "6.5",
     "image": "/assets/Valentino/Кеды valentino.jfif",
     "name": "Prada Monolith",
     "price": "79.99"
   },
-    {
-      "id": 129,
-      "category": "T-shirt",
-      "rating":"9.5",
-      "image": "/assets/Outfits/Half-Zip Polo Shirt.png",
-      "name": "oversized streetwear T-shirt",
-      "price": "29.99"
-    },
-    {
-      "id":130 ,
-      "category": "T-shirt",
-      "rating":"9.5",
-      "image": "/assets/Outfits/Casual Sleeveless.png",
-      "name": "oversized streetwear T-shirt",
-      "price": "29.99"
-    },
-    {
-      "id": 131,
-      "category": "T-shirt",
-      "rating":"9.5",
-      "image": "/assets/Outfits/Streetwear T-shirt.png",
-      "name": "oversized streetwear T-shirt",
-      "price": "29.99"
-    },
-    {
-      "id":132 ,
-      "category": "T-shirt",
-      "rating":"9.5",
-      "image": "/assets/Outfits/T-shirt.png",
-      "name": "oversized streetwear T-shirt",
-      "price": "29.99"
-    },
-    {
-      "id": 133,
-      "category": "T-shirt",
-      "rating":"9.5",
-      "image": "/assets/icons/Wade.png",
-      "name": "oversized streetwear T-shirt",
-      "price": "29.99"
-    },
-    {
-      "id": 134,
-      "category": "T-shirt",
-      "rating":"9.5",
-      "image": "/assets/Profile/cool arm.png",
-      "name": "oversized streetwear T-shirt",
-      "price": "29.99"
-    }
+  {
+    "id": 129,
+    "category": "T-shirt",
+    "rating": "9.5",
+    "image": "/assets/Outfits/Half-Zip Polo Shirt.png",
+    "name": "oversized streetwear T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": 130,
+    "category": "T-shirt",
+    "rating": "9.5",
+    "image": "/assets/Outfits/Casual Sleeveless.png",
+    "name": "oversized streetwear T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": 131,
+    "category": "T-shirt",
+    "rating": "9.5",
+    "image": "/assets/Outfits/Streetwear T-shirt.png",
+    "name": "oversized streetwear T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": 132,
+    "category": "T-shirt",
+    "rating": "9.5",
+    "image": "/assets/Outfits/T-shirt.png",
+    "name": "oversized streetwear T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": 133,
+    "category": "T-shirt",
+    "rating": "9.5",
+    "image": "/assets/icons/Wade.png",
+    "name": "oversized streetwear T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": 134,
+    "category": "T-shirt",
+    "rating": "9.5",
+    "image": "/assets/Profile/cool arm.png",
+    "name": "oversized Harmless T-shirt",
+    "price": "29.99"
+  }
 ]
